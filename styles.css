@@ -1,0 +1,87 @@
+.navbar {
+  background-color: #f8f9fa;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: #333;
+}
+
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  width: 30%;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.card button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Contenedor principal para las cards */
+section.container {
+  display: flex;             /* Usamos flexbox para alinear las cards */
+  flex-wrap: wrap;           /* Permite que las cards se envuelvan si el espacio no es suficiente */
+  justify-content: space-around; /* Distribuye las cards de forma equitativa */
+  gap: 20px;                 /* Espacio entre las cards */
+  margin-top: 20px;          /* Espacio superior para separar del título */
+}
+
+/* Estilo para cada card */
+.card {
+  width: 30%;                /* Ajustamos el ancho de las cards para que se alineen bien */
+  min-width: 250px;          /* Asegura que las cards no se encojan demasiado en pantallas pequeñas */
+  border: 1px solid #ddd;   /* Borde para cada card */
+  border-radius: 8px;        /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  padding: 10px;             /* Espacio dentro de la card */
+  text-align: center;        /* Centrar el texto */
+  background-color: #fff;    /* Fondo blanco para las cards */
+}
+
+/* Estilo de las imágenes dentro de las cards */
+.card img {
+  width: 100%;               /* Las imágenes ocupan el 100% del ancho de la card */
+  border-radius: 8px;        /* Esquinas redondeadas para la imagen */
+  margin-bottom: 10px;       /* Espacio debajo de la imagen */
+}
+
+/* Estilo del título de la card */
+.card h2 {
+  font-size: 1.2rem;         /* Tamaño de fuente del título */
+  margin-bottom: 10px;       /* Espacio debajo del título */
+}
+
+/* Estilo del botón de cada card */
+.card button {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white;              /* Color del texto */
+  border: none;              /* Sin borde */
+  padding: 10px 20px;        /* Espaciado interno */
+  border-radius: 5px;        /* Esquinas redondeadas */
+  cursor: pointer;          /* Cambia el cursor al pasar sobre el botón */
+}
+
+.card button:hover {
+  background-color: #0056b3; /* Color de fondo cuando el mouse está sobre el botón */
+}
